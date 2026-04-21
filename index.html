@@ -43,27 +43,23 @@
 
 <h2>Dinosaurs</h2>
 
-<div class="book-row">
+<div class="slider-wrapper">
 
-<div class="book">
-<img src="images/placeholder.png">
-<p>Dino Book</p>
+<button class="arrow left" onclick="scrollBooks('dinoRow', -300)">❮</button>
+
+<div class="book-row" id="dinoRow">
+
+<div class="book">Book 1</div>
+<div class="book">Book 2</div>
+<div class="book">Book 3</div>
+<div class="book">Book 4</div>
+<div class="book">Book 5</div>
+<div class="book">Book 6</div>
+<div class="book">Book 7</div>
+
 </div>
 
-<div class="book">
-<img src="images/placeholder.png">
-<p>Dino Book</p>
-</div>
-
-<div class="book">
-<img src="images/placeholder.png">
-<p>Dino Book</p>
-</div>
-
-<div class="book">
-<img src="images/placeholder.png">
-<p>Paleontology Book</p>
-</div>
+<button class="arrow right" onclick="scrollBooks('dinoRow', 300)">❯</button>
 
 </div>
 
