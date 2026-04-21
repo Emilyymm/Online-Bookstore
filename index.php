@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Bookstore</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">
+<h1>📚 BookStore</h1>
+</div>
+
+<div class="search">
+<input type="text" placeholder="Search books...">
+</div>
+
+<div class="account">
+<a href="#">Log In</a> |
+<a href="#">Register</a>
+</div>
+
+</header>
+
+<nav>
+<a href="index.php">Home</a>
+<a href="books.php?category=dino">Dinosaurs</a>
+<a href="books.php?category=history">History</a>
+<a href="books.php?category=culture">Culture</a>
+<a href="books.php?category=kids">Kids</a>
+</nav>
+
+<section class="banner">
+
+<h2>Buy Books Here</h2>
+<p>Discover books from every subject.</p>
+
+</section>
+
+<section class="category">
+
+<h2>Dinosaurs</h2>
+
+<div class="book-row">
+
+<div class="book">
+<img src="images/placeholder.png">
+<p>Dino Book</p>
+</div>
+
+<div class="book">
+<img src="images/placeholder.png">
+<p>Dino Book</p>
+</div>
+
+<div class="book">
+<img src="images/placeholder.png">
+<p>Dino Book</p>
+</div>
+
+<div class="book">
+<img src="images/placeholder.png">
+<p>Paleontology Book</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="category">
+
+<h2>History</h2>
+
+<div class="book-row">
+
+<div class="book">
+<img src="images/placeholder.png">
+<p>History Book</p>
+</div>
+
+<div class="book">
+<img src="images/placeholder.png">
+<p>History Book</p>
+</div>
+
+<div class="book">
+<img src="images/placeholder.png">
+<p>History Book</p>
+</div>
+
+<div class="book">
+<img src="images/placeholder.png">
+<p>History Book</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>Online Bookstore © 2026</p>
+
+</footer>
+
+</body>
+</html>
