@@ -1,159 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Online Bookstore</title>
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BookVerse</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
 <header>
-
-<div class="logo">
-<h1>📚 BookStore</h1>
-</div>
-
-<div class="search">
-<input type="text" placeholder="Search books...">
-</div>
-
-<div class="account">
-<a href="#">Log In</a> |
-<a href="#">Register</a>
-</div>
-
-</header>
-
+<h1>📚 BookVerse</h1>
+<input type="text" id="searchBar" placeholder="Search books...">
 <nav>
 <a href="index.php">Home</a>
-<a href="paleontology.html?category=dino">Paleontology</a>
-<a href="history.html?category=history">History</a>
-<a href="culture.html?category=culture">Culture</a>
-<a href="culture.html?category=kids">Kids</a>
+<a href="books.php">Books</a>
+<a href="login.php">Login</a>
+<a href="register.php">Register</a>
 </nav>
-
-<section id="home" class="banner" aria-label="Site banner">
-        <div class="slideshow">
-            <img src="images/dinobook1.jpg" alt="banner1" class="active">
-            <img src="images/banner.jpg" alt="banner2">
-            <img src="images/" alt="banner3">
-        </div>
+</header>
+<section class="slider">
+<div class="slide active">Discover New Worlds</div>
+<div class="slide">Prehistoric Dinosaur Collection</div>
+<div class="slide">History Best Sellers</div>
 </section>
-    
-<h2>Discover</h2>
-<p>Hello welcome to the digital bookstore! Discover books from every subject.</p>
-
-</section>
-
 <section class="category">
-
-<h2>Dinosaurs</h2>
-
-<div class="slider-wrapper">
-
-<button class="arrow left" onclick="scrollBooks('dinoRow', -300)">❮</button>
-
-<div class="book-row" id="dinoRow">
-
-<div class="book">
-<img src="images/dinobook1.JPG">
-<p>Dino Book</p>
+<h2>Featured Books</h2>
+<div class="carousel">
+<button onclick="scrollRow(-1)">❮</button>
+<div class="row" id="bookRow">
+<div class="book">Book 1</div>
+<div class="book">Book 2</div>
+<div class="book">Book 3</div>
+<div class="book">Book 4</div>
+<div class="book">Book 5</div>
 </div>
-
-<div class="book">
-<img src="images/placeholder.png">
-<p>Dino Book</p>
+<button onclick="scrollRow(1)">❯</button>
 </div>
-
-<div class="book">
-<img src="images/placeholder.png">
-<p>Dino Book</p>
-</div>
-
-<div class="book">
-<img src="images/placeholder.png">
-<p>Dino Book</p>
-</div>
-
-<div class="book">
-<img src="images/placeholder.png">
-<p>Dino Book</p>
-</div>
-
-<div class="book">
-<img src="images/placeholder.png">
-<p>Dino Book</p>
-</div>
-
-<div class="book">
-<img src="images/placeholder.png">
-<p>Dino Book</p>
-</div>
-
-</div>
-
-<button class="arrow right" onclick="scrollBooks('dinoRow', 300)">❯</button>
-
-</div>
-
 </section>
-
-<section class="category">
-
-<h2>History</h2>
-
-<div class="book-row">
-
-<button class="arrow left" onclick="scrollBooks('historyRow', -300)">❮</button>
-
-<div class="book">
-<img src="images/placeholder.png">
-<p>History Book</p>
-</div>
-
-<div class="book">
-<img src="images/placeholder.png">
-<p>History Book</p>
-</div>
-
-<div class="book">
-<img src="images/placeholder.png">
-<p>History Book</p>
-</div>
-
-<div class="book">
-<img src="images/placeholder.png">
-<p>History Book</p>
-</div>
-
-<div class="book">
-<img src="images/placeholder.png">
-<p>History Book</p>
-</div>
-
-<div class="book">
-<img src="images/placeholder.png">
-<p>History Book</p>
-</div>
-    
-<button class="arrow right" onclick="scrollBooks('historyRow', 300)">❮</button>
-    
-</div>
-
-</section>
-
-<footer>
-
-<p>Online Bookstore © 2026</p>
-
-</footer>
-
-<script>
-function scrollBooks(rowId, amount){
-    document.getElementById(rowId).scrollLeft += amount;
-}
-</script>
-
-<script src="javascript/java.js"></script>
+<footer>© 2026 BookVerse</footer>
+<script src="js/script.js"></script>
 </body>
 </html>
