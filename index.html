@@ -6,48 +6,92 @@
 <title>BookVerse</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+
 <header>
-<div class="account-links"><a href="login.php">Login</a> <a href="register.php">Register</a></div>
+
+<div class="account-links">
+<a href="login.php">Login</a>
+<a href="register.php">Register</a>
+</div>
+
 <h1>📚 BookVerse</h1>
+
 <input type="text" id="searchBar" placeholder="Search books...">
+
 </header>
+
 <nav class="topnav">
 <a href="index.php">Home</a>
 <a href="books.php">Books</a>
 </nav>
+
 <section class="slider">
+
 <img class="slide active" src="images/banner1.jpg" alt="Banner 1">
 <img class="slide" src="images/banner2.jpg" alt="Banner 2">
 <img class="slide" src="images/banner3.jpg" alt="Banner 3">
+
 </section>
+
 <section class="category">
+
 <h2>Featured Books</h2>
+
 <div class="carousel">
 <button onclick="scrollRow('bookRow1',-1)">❮</button>
+
 <div class="row" id="bookRow1">
-<div class="book">Book 1</div><div class="book">Book 2</div><div class="book">Book 3</div><div class="book">Book 4</div><div class="book">Book 5</div>
+<div class="book">Book 1</div>
+<div class="book">Book 2</div>
+<div class="book">Book 3</div>
+<div class="book">Book 4</div>
+<div class="book">Book 5</div>
 </div>
+
 <button onclick="scrollRow('bookRow1',1)">❯</button>
 </div>
+
 <h2>History Books</h2>
+
 <div class="carousel">
 <button onclick="scrollRow('bookRow2',-1)">❮</button>
+
 <div class="row" id="bookRow2">
-<div class="book">History 1</div><div class="book">History 2</div><div class="book">History 3</div><div class="book">History 4</div><div class="book">History 5</div>
+<div class="book">History 1</div>
+<div class="book">History 2</div>
+<div class="book">History 3</div>
+<div class="book">History 4</div>
+<div class="book">History 5</div>
 </div>
+
 <button onclick="scrollRow('bookRow2',1)">❯</button>
 </div>
+
 <h2>Dinosaur Books</h2>
+
 <div class="carousel">
 <button onclick="scrollRow('bookRow3',-1)">❮</button>
+
 <div class="row" id="bookRow3">
-<div class="book">Dino 1</div><div class="book">Dino 2</div><div class="book">Dino 3</div><div class="book">Dino 4</div><div class="book">Dino 5</div>
+<div class="book">Dino 1</div>
+<div class="book">Dino 2</div>
+<div class="book">Dino 3</div>
+<div class="book">Dino 4</div>
+<div class="book">Dino 5</div>
 </div>
+
 <button onclick="scrollRow('bookRow3',1)">❯</button>
 </div>
+
 </section>
-<footer>© 2026 BookVerse</footer>
+
+<footer>
+© 2026 BookVerse
+</footer>
+
 <script src="js/script.js"></script>
+
 </body>
 </html>
