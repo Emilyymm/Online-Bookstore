@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html><head><title>Login</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<form class="form">
+<h2>Login</h2>
+<input type="text" placeholder="Username">
+<input type="password" placeholder="Password">
+<button>Login</button>
+</form>
+</body></html>
