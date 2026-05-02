@@ -102,7 +102,9 @@ header {
   overflow: hidden;
   gap: 15px;
   scroll-behavior: smooth;
-  max-width: 900px; 
+
+  width: 100%;
+  max-width: 1200px;
 }
 
 .book {
