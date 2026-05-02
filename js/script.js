@@ -7,6 +7,6 @@ setInterval(() => {
   slides[current].classList.add('active');
 }, 4000);
 
-function scrollRow(dir) {
-  document.getElementById('bookRow').scrollLeft += dir * 250;
+function scrollRow(id, dir) {
+  document.getElementById(id).scrollLeft += dir * 250;
 }
