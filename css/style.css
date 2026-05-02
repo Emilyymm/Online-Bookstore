@@ -89,6 +89,7 @@ header {
 .carousel {
   display: flex;
   align-items: center;
+  justify-content: center; 
   gap: 10px;
   margin-bottom: 30px;
 }
@@ -98,7 +99,7 @@ header {
   overflow: hidden;
   gap: 15px;
   scroll-behavior: smooth;
-  width: 100%;
+  max-width: 900px; 
 }
 
 .book {
