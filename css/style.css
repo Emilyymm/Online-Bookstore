@@ -68,6 +68,9 @@ header {
   height: 360px;
   position: relative;
   overflow: hidden;
+
+  margin: 30px;            
+  border-radius: 15px;     
 }
 
 .slide {
