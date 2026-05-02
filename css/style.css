@@ -5,19 +5,27 @@ body {
   color: #222;
 }
 
+/* HEADER FIXED */
 header {
-  position: relative;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  padding: 20px;
+  padding: 20px 40px;
   background: #3b2a1a;
   color: #fff;
-  gap: 15px;
 }
 
-header input {
+.logo h1 {
+  margin: 0;
+}
+
+.search {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#searchBar {
   width: 520px;
   max-width: 90%;
   padding: 12px;
@@ -25,20 +33,18 @@ header input {
   border: none;
 }
 
-.account-links {
-  position: absolute;
-  top: 20px;
-  right: 25px;
+.account {
   display: flex;
-  gap: 18px;
+  gap: 15px;
 }
 
-.account-links a {
+.account a {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
 
+/* NAV */
 .topnav {
   display: flex;
   justify-content: center;
@@ -57,6 +63,7 @@ header input {
   color: #f5d08a;
 }
 
+/* SLIDER */
 .slider {
   height: 360px;
   position: relative;
@@ -74,6 +81,7 @@ header input {
   display: block;
 }
 
+/* BOOK SECTIONS */
 .category {
   padding: 40px;
 }
@@ -106,6 +114,7 @@ header input {
   text-align: center;
 }
 
+/* BUTTONS */
 button {
   padding: 10px;
   border: none;
@@ -115,6 +124,11 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background: #5a4029;
+}
+
+/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
@@ -123,8 +137,14 @@ footer {
   margin-top: 40px;
 }
 
+/* MOBILE */
 @media (max-width: 768px) {
-  header input {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #searchBar {
     width: 95%;
   }
 
